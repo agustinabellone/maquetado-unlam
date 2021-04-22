@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 7rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 95, 0);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+.logo img {
+  width: 4rem;
+}
+
+.logo-imagen {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.menu {
+  width: 25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circulo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url("../img/avatar.png");
+  background-size: contain;
+  background-color: white;
+  background-repeat: no-repeat;
+}
+.menu nav {
+  width: 19rem;
+}
+
+.menu nav li {
+  display: flex;
+  justify-content: space-between;
+}
+.menu nav li ul {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #a1340b;
+}
+.menu nav li ul:hover {
+  background-color: #b14822;
+}
+
+.menu nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+.icono-menu {
+  display: none;
+}
+.icono-menu img {
+  width: 30px;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+.consultas li {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  background-color: rgb(42, 42, 42);
+}
+.consultas li ul {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+}
+.consultas li ul:hover {
+  background-color: rgba(117, 117, 117, 0.8);
+  cursor: pointer;
+}
+.consultas li ul a {
+  text-decoration: none;
+  color: white;
+}
+.consultas li ul i {
+  color: white;
+  margin-right: 1rem;
+}
+
+.contenedor-materias {
+  width: 100%;
+  height: 22rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contenedor-materias .materia {
+  width: 24%;
+  height: 20rem;
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+  flex-direction: flex;
+  justify-content: space-around;
+  padding: 0 10px;
+  color: white;
+  text-align: center;
+}
+.contenedor-materias .materia .titulo-icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-materias .materia .titulo-icono i {
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.contenedor-materias .materia h2 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+.contenedor-materias .materia p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.contenedor-materias .materia .opciones {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.contenedor-materias .materia .opciones .opcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  cursor: pointer;
+}
+.contenedor-materias .materia .opciones .opcion:hover {
+  color: rgb(77, 206, 77);
+}
+.contenedor-materias .materia .opciones .opcion i {
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  text-align: center;
+  margin: 1rem;
+}
+
+/*Tablet y Celular*/
+
+@media (max-width: 1024px) {
+  .menu, .consultas {
+    display: none;
+  }
+  .icono-menu {
+    display: block;
+  }
+  .contenedor-materias {
+    height: 90rem;
+    flex-direction: column;
+  }
+  .contenedor-materias .materia {
+    width: 90%;
+    height: 20rem;
+  }
+}
+

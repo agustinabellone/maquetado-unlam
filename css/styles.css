@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+
+.contenedor-general {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fondo.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+}
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+/*Header*/
+
+header {
+    width: 100%;
+    height: 7rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+ 
+}
+.logo img {
+    width: 4rem;
+}
+
+.logo-imagen {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.menu {
+    width: 25rem ;
+}
+
+.menu nav li {
+    display: flex;
+    justify-content: space-between;   
+   
+}
+.menu nav li ul {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #A1340B;
+}
+.menu nav li ul:hover {
+    background-color:#b14822 ;
+}
+.menu nav li a {
+    color: white;
+    text-decoration: none;
+ 
+}
+
+.icono-menu img {
+    width: 30px; 
+    cursor: pointer;
+}
+
+.icono-menu {
+    display: none;
+}
+
+
+/*Principal*/
+.contenedor-principal {
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Inicio de Sesion*/
+.inicio-sesion {
+    background-color: rgba(0, 0, 0, 0.527);
+    height: 80%;
+    width: 500px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inicio-sesion form {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.inicio-sesion div {
+    text-align: center;
+}
+.inicio-sesion form input {
+    width: 300px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    height: 2.8rem;
+    outline: none;
+    border: none;
+    color: rgb(77, 77, 77);
+    border-radius: 0.5rem;
+}
+.inicio-sesion form input::placeholder {
+    color: rgb(165, 165, 165);
+    font-size: 1rem;
+    text-transform: uppercase;
+
+}
+.inicio-sesion form button {
+    background-color: #067014;
+    height: 40px;
+    width: 80%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 550;
+    border-radius: 0;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+}
+.inicio-sesion form button:hover {
+    background-color:#2c7e37 ;
+}
+.inicio-sesion form button a {
+    color: white;
+    text-decoration: none;
+}
+.cartel-ingreso {
+    background-color: #b34219;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: white;
+    width: 90%;
+    border-radius: 10px;
+}
+.cartel-ingreso a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/*Menu Inferior*/
+
+.menu-inferior {
+    display: flex;
+    margin: 0 25%;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+.menu-inferior div {
+    padding: 1rem;
+    cursor: pointer;
+}
+.menu-inferior div a:hover {
+    color: green;
+  
+}
+.menu-inferior div:nth-child(2) {
+    border-left: 2px solid #2c7e37;
+    border-right: 2px solid #2c7e37;
+}
+.menu-inferior a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    padding-top: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/*Tablet*/
+
+@media (min-width:700px) and  (max-width:1024px) {
+    h1 {
+        font-size: 2.2rem;
+        margin-top: 2rem;
+    }
+    .contenedor-principal {
+        height: 30rem;
+    }  
+    .inicio-sesion  {
+        height: 300px;
+        width: 400px;
+    }
+   
+
+}
+
+/*Celular*/
+
+@media (min-width:300px) and (max-width:700px) {
+    .contenedor-principal {
+        height: 22rem;
+    }
+    h1 {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .icono-menu {
+        display: block;
+    }
+    .menu {
+         display: none;
+    }
+    .inicio-sesion{
+        height: 300px;
+        width: 400px;
+    }
+ 
+
+    .menu-inferior {
+        margin: 1rem 4rem;
+        height: 15rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .menu-inferior div  {
+        width: 80%;
+        text-align: center;
+    }
+ 
+    .menu-inferior div:nth-child(2), 
+    .menu-inferior div:nth-child(3),
+    .menu-inferior div:nth-child(1) {
+        border-bottom: 2px solid #2c7e37;
+        border-top: 2px solid #2c7e37;
+        border-left: none;
+        border-right:none;
+    }
+
+}
