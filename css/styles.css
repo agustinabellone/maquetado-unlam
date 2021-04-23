@@ -14,7 +14,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-position: center;
 }
 h1 {
@@ -261,11 +261,7 @@ footer {
         text-align: center;
     }
  
-    .menu-inferior div:nth-child(2), 
-    .menu-inferior div:nth-child(3),
-    .menu-inferior div:nth-child(1) {
-        border-bottom: 2px solid #2c7e37;
-        border-top: 2px solid #2c7e37;
+    .menu-inferior div:nth-child(2){
         border-left: none;
         border-right:none;
     }
