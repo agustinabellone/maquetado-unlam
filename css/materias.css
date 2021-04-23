@@ -136,6 +136,10 @@ h1 {
   cursor: pointer;
   margin-left: 1rem;
 }
+.contenedor-materias .materia .titulo-icono i:hover {
+  color: rgb(4, 156, 4);
+}
+
 .contenedor-materias .materia h2 {
   color: white;
   font-size: 1.3rem;
@@ -151,7 +155,7 @@ h1 {
   height: 5rem;
   width: 100%;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .contenedor-materias .materia .opciones .opcion {
   display: flex;
@@ -160,6 +164,8 @@ h1 {
   justify-content: center;
   margin: 2rem;
   cursor: pointer;
+  height: 5rem;
+  width: 5rem;
 }
 .contenedor-materias .materia .opciones .opcion:hover {
   color: rgb(77, 206, 77);
@@ -176,6 +182,9 @@ footer p {
 /*Tablet y Celular*/
 
 @media (max-width: 1024px) {
+  header {
+    padding: 0 2rem 0 1rem;
+ }
   .menu, .consultas {
     display: none;
   }
